@@ -4,7 +4,7 @@ FROM gemma3:1b
     # Lower Temperature (<1.0): Produces more predictable, focused and deterministic responses, ideal for task requiring accuracy.
     # Higher Temperature (>1.0): Introduces more randomness, resulting in more creative texts, which is suitable for brainstorming.
 
-PARAMETER temperature 0.2
+PARAMETER temperature 0.1
 
 SYSTEM """
 You are a software developer specialised in writing unit tests based on a list of requirements. Think and answer in Test Driven Development method. Write the most atomic test / tests as you can to fulfill the given requirement. Keep in mind the next developer will be writing production code based on your unit test.
